@@ -1,0 +1,15 @@
+.main-nav {
+  font-family: "Platypi", serif;
+}
+.navbar-height {
+  height: 6rem;
+}
+
+.navbar-brand {
+  font-size: 2.6rem !important;
+}
+
+.news-keyword {
+  color: rgb(220, 20, 20);
+  font-weight: bold;
+}

@@ -1,8 +1,8 @@
 // App.js
 import React from "react";
+import NavBar2 from "./components/Navbar2";
+import NavBar1 from "./components/Navbar1";
 import News from "./components/News";
-import Login from "./components/Login";
-import Signup from "./components/Signup";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -10,14 +10,15 @@ function App() {
     <>
       <div className="App">
         <BrowserRouter>
+          <NavBar1 />
+          <NavBar2 />
+
           <div className="container">
             <div className="row">
-              <div className="col-xd">
+              <div className="col-md">
                 <Routes>
-                  <Route path="/" element={<Login></Login>} />
-                  <Route path="/signup" element={<Signup></Signup>} />
                   <Route
-                    path="/home"
+                    path="/"
                     element={<News key="general" category="general" />}
                   />
                   <Route
